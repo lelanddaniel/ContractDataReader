@@ -32,7 +32,7 @@ namespace ReadContractData.Services.Readers
             var filePath2 = fileDetails.Path.Split("\\");
             var fileName = filePath2[filePath2.Length - 1].Split(".")[0];
             var fileDirectory = filePath2[filePath2.Length - 2];
-            return fileDirectory + " - " + fileName + " - " + fileDetails.Type + ".txt";
+            return fileDirectory + " - " + fileName + ".txt";
         }
 
         private IDictionary<string, AcroFields.Item> GetPDFsFormFields(FileDetails fileDetails)
